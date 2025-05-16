@@ -1,0 +1,8 @@
+prefix=/home/jetson/simulation_ws/install
+
+Name: mapping_package
+Description: Description of mapping_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

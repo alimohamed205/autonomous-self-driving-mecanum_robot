@@ -1,0 +1,3 @@
+sudo apt install ros-noetic-amcl
+sudo apt install ros-noetic-dwa-local-planner
+sudo apt install ros-noetic-gmapping

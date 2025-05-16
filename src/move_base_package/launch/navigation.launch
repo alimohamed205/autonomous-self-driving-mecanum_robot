@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="map_file" default="$(find mapping_package)/maps/map.yaml"/>
+
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+ 
+ 
+    <arg name="custom_amcl_launch_file" default="$(find localization)/launch/amcl.launch"/>
+
+   <include file="$(arg custom_amcl_launch_file)"/>
+        
+ 
+
+    <include file="$(find move_base_package)/launch/move_base.launch">
+        
+    </include>
+    <include file="$(find robot_description)/launch/rviz.launch">
+        
+    </include>
+    
+</launch>
